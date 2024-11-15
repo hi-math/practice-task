@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import pydeck as pdk
 
-with st.sidebar:
-    st.image("image.png", caption="서울의 공공와이파이", use_container_width=True)
-
 data = pd.read_csv("publicwifi.csv")
 
 data = data.rename(columns={'Y좌표': 'lat', 'X좌표': 'lon'})
