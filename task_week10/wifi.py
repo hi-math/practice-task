@@ -5,7 +5,7 @@ import pydeck as pdk
 with st.sidebar:
     st.image("image.png", caption="서울의 공공와이파이", use_container_width=True)
 
-data = pd.read_csv("publicwifi.csv-utf8", encoding="utf-8")
+data = pd.read_csv("publicwifi.csv", encoding="utf-8")
 
 data = data.rename(columns={'Y좌표': 'lat', 'X좌표': 'lon'})
 data['color'] = data['실내외구분'].map({'실내': [0, 0, 250], '실외': [255, 200, 0]})
