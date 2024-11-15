@@ -3,7 +3,7 @@ import pandas as pd
 import pydeck as pdk
 
 with st.sidebar:
-    st.image("images\wifiseoul.png", caption="서울의 공공와이파이", use_container_width=True)
+    st.image("wifiseoul.png", caption="서울의 공공와이파이", use_container_width=True)
 
 data = pd.read_csv("publicwifi.csv")
 
