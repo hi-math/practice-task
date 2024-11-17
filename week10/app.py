@@ -5,8 +5,8 @@ import time
 
 
 st.title("통합데이터 서비스")
-st.image('image.jpg')
-data = pd.read_csv("members.csv")
+st.image('week10\image.jpg')
+data = pd.read_csv("week10\members.csv")
 data["PW"] = data["PW"].astype(str)
 
 with st.form("login_form"):
